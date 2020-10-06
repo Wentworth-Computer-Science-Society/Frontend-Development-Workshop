@@ -42,9 +42,39 @@ I will briefly list the other tags in this example as they are very important to
 
 ### Tags
 
-There are a wide range of tags in html 
+There are a wide range of tags in html. I will list and explain the most important ones here, as well as describe a little bit about the tags. For a full list of tags, visit
+[this link](https://www.w3schools.com/TAGS/default.ASP). HTML tags are rectangular and often take up more space than the content inside of them. Here is a simple example of the small page we showed you to explain html structure with a background color set for both:
 
-Inline vs block elements:
+As you can see, the tag actually takes up much more space on the page than just displaying the content. We will talk more about this once we move to the CSS Section. A large distinction to make between html elements is that some elements are block elements and some are inline. The characteristics of a block element are that it always starts on a new line, and it takes up as much space that is available. Inline elements differ because they do not start on new lines, and they take up only the space on the page that they need.
+
+I am going to list some tags here and link you to the w3 school page explaining each of them. These are the most important tags to learn and will be most commonly used when developing web pages:
+
+[```<a>```](https://www.w3schools.com/TAGS/tag_a.asp)<br />
+[```<button>```](https://www.w3schools.com/TAGS/tag_button.asp)<br />
+[```<body>```](https://www.w3schools.com/TAGS/tag_body.asp)<br />
+[```<div>```](https://www.w3schools.com/TAGS/tag_div.asp)<br />
+[```<form>```](https://www.w3schools.com/TAGS/tag_form.asp)<br />
+[```<h1> - <h6>```](https://www.w3schools.com/TAGS/tag_hn.asp)<br />
+[```<head>```](https://www.w3schools.com/TAGS/tag_head.asp)<br />
+[```<html>```](https://www.w3schools.com/TAGS/tag_html.asp)<br />
+[```<img>```](https://www.w3schools.com/TAGS/tag_img.asp)<br />
+[```<input>```](https://www.w3schools.com/TAGS/tag_input.asp)<br />
+[```<li>```](https://www.w3schools.com/TAGS/tag_li.asp)<br />
+[```<link>```](https://www.w3schools.com/TAGS/tag_link.asp)<br />
+[```<meta>```](https://www.w3schools.com/TAGS/tag_meta.asp)<br />
+[```<ol>```](https://www.w3schools.com/TAGS/tag_ol.asp)<br />
+[```<p>```](https://www.w3schools.com/TAGS/tag_p.asp)<br />
+[```<script>```](https://www.w3schools.com/TAGS/tag_script.asp)<br />
+[```<span>```](https://www.w3schools.com/TAGS/tag_span.asp)<br />
+[```<style>```](https://www.w3schools.com/TAGS/tag_style.asp)<br />
+[```<table>```](https://www.w3schools.com/TAGS/tag_table.asp)<br />
+[```<tbody>```](https://www.w3schools.com/TAGS/tag_tbody.asp)<br />
+[```<td>```](https://www.w3schools.com/TAGS/tag_td.asp)<br />
+[```<th>```](https://www.w3schools.com/TAGS/tag_th.asp)<br />
+[```<thead>```](https://www.w3schools.com/TAGS/tag_thead.asp)<br />
+[```<tr>```](https://www.w3schools.com/TAGS/tag_tr.asp)<br />
+[```<ul>```](https://www.w3schools.com/TAGS/tag_ul.asp)<br />
+[```<video>```](https://www.w3schools.com/TAGS/tag_ul.asp)<br />
 
 ### Semantic HTML
 
