@@ -14,7 +14,7 @@ To create an html file, you simply need to name your file with the .html file ex
  ```<!DOCTYPE html>```
  
 The building blocks of HTML are tags. Tags are used to structure a document and to contain elements on a page. 
-To start, the root tag is is opened as <html> and closed as </html>. This tag is the root element of the HTML tree. All tags open with <tag> and close with </tag>. Here is an example of a very simple html file:
+To start, the root tag is is opened as ```<tag>``` and closed as ```</html>```. This tag is the root element of the HTML tree. All tags open with <tag> and close with </tag>. Here is an example of a very simple html file:
 
 ```
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ I will briefly list the other tags in this example as they are very important to
 ### Tags
 
 There are a wide range of tags in html. I will list and explain the most important ones here, as well as describe a little bit about the tags. For a full list of tags, visit
-[this link](https://www.w3schools.com/TAGS/default.ASP). HTML tags are rectangular and often take up more space than the content inside of them. Here is a simple example of the small page we showed you to explain html structure with a background color set for both:
+[this link](https://www.w3schools.com/TAGS/default.ASP). HTML tags are rectangular and often take up more space than the content inside of them.
 
 As you can see, the tag actually takes up much more space on the page than just displaying the content. We will talk more about this once we move to the CSS Section. A large distinction to make between html elements is that some elements are block elements and some are inline. The characteristics of a block element are that it always starts on a new line, and it takes up as much space that is available. Inline elements differ because they do not start on new lines, and they take up only the space on the page that they need.
 
