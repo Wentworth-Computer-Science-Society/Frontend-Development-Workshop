@@ -122,17 +122,105 @@ Html tags on their own are very limited, and this will especially be noticed whe
 
 ```<tagName attribute="">```
 
-These attributes provide additional information about the elements. They are always specified in the opening html tags. 
+These attributes provide additional information about the elements. They are always specified in the opening html tags. They usually are declared like this ```name="value"```
 
 ##  CSS
 What is CSS? CSS stands for Cascading Style Sheets and it is used to help style a web document.
 
-CSS is used as a set of rules to create a style on the user interface. This could be changing colors, fonts, or size of different elements on a page. HTML defines the content of the page, and CSS allows you to make it pretty.
+CSS is used as a set of rules to create a style on the user interface. This could be changing colors, fonts, or size of different elements on a page. HTML defines the content of the page, and CSS allows you to make it pretty. To define a CSS file, you can end your file with the .css extension.
 
-### How to apply css styling
-Within html, there is an attribute to add styling
+### CSS Syntax
 
+CSS follows a very simple syntax. You are defining the rules for how elements on your page should be styled. You can write as many rules as you'd like. The syntax for writing rules is as follows:
+
+```
+ selector {
+  property: value;
+ }
+```
+
+Let's break this down piece by piece. The selector points to an element, class or id that you would like to style. The content contained within the curly-braces is called a declaration block. This is a set of property: value pairs separated by semicolons. Properties are the style you would like to change, and the value is the value you would like to set to that property. The following HTML and CSS codeblock will show you how element selectors, class and id's work within an html document
+
+```
+<head>
+ <style>
+   <!-- Set all p tags to have text color red -->
+   p {
+     color: red;
+   }
+   
+   <!-- Set all tags with the class class-example to have a font-size of 30px -->
+   .class-example {
+     font-size: 30px;
+   }
+   
+   <!-- Set the element with id id-example to have a background color of red -->
+   #id-example {
+     background-color: red;
+   }
+ </style>
+</head>
+
+<body>
+  <div id="class-example">
+    <h1 id="id-example">Hello</h1>
+    <p>This is red text</p>
+  </div>
+</body>
+```
+Some important things to note with this example: 
+
+```ID's``` are unique, so only one element can have an ID assigned to it. This is the most specific selector as it only targets one element<br />
+```Classes``` can be applied to as many elements as you want, and it does not matter what element, it will apply the style to that specific element if the class is applied<br/>
+```Element``` selectors target a specific tag, so in this case, all p tags in the above document would have the style applied to them.
+
+### Cascading Style Sheets
+The cascading part of CSS comes from the priority that styles rules are applied. CSS is read top to bottom, and there is a very real possibility that you might have a conflicting style. Look at the example below:
+
+```
+<head>
+ <style>
+   p {
+     color: red;
+   }
+   
+   p {
+     color: green;
+   }
+
+ </style>
+</head>
+
+<body>
+    <p>This is red text</p>
+</body>
+```
+
+What color would you expect the p tag to be? In this case, because the second rule applied to p tags is lower in the document, the color would be green.
+
+#### Inline Styling
+There are several ways that you can apply styling to elements, within your html document, you can write inline styles using the style attribute. Doing this, your tag might look something like this:
+
+```<p style="color:red;">This is a red paragraph.</p>```
+
+This format of styling is great to easily add a style or two, but it is easy to see that this method may become confusing when many styles are applied to each tag. This leads us into a better way to structure CSS.
+
+#### The style tag
+To avoid writing CSS styles inline, which can cause your markup to be less readable, html provides a style tag. Here, you can write CSS and it will apply directly to your html document.
+#### Using a separate CSS file
+Using a separate CSS file is a great way to further re-use your CSS. Think about making a website, and you want the styling to be consistent across the site. Instead of copying and pasting your style tag into each document. Re-using styles is great and can help you easily change the whole style of your website later on if you decide you want to change something like the color scheme.
+
+You can link an external stylesheet with the following html tag inserted into your head document (make sure the file you specify has the correct path to it)
+
+```
+<link rel="stylesheet" type="text/css" href="index.css">
+```
+
+The rel attribute specifies you are linking a stylesheet, the type attribute specifies that it is css, and the href attribute is a link to your css file.
 ##  Helpful Resources
-Free Code Camp is a great website to walk your through examples! At the end of each certificate you must create a project using the tools that you learned. Certifcates from 
+[Free Code Camp](https://www.freecodecamp.org/) is a great website to walk your through examples! At the end of each certificate you must create a project using the tools that you learned. Certifcates from 
 Free Code Camp are great to put on resume since it shows that you are familiar with many languages in frontend development.
-https://www.freecodecamp.org/
+
+[W3 Schools](https://www.w3schools.com/html/html_attributes.asp) is an excellent resource to go to when you have specific questions about different HTML or CSS related tags, properties or concepts as a whole. There is comprehensive documentation, and examples on how to use almost everything.
+
+[The Odin Project](https://www.theodinproject.com/) is a collection of resources which will help you build up your web development skills with comprehensive exercises. It is a great way to get started with learning web development.
