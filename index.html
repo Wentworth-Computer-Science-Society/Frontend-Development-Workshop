@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <meta charset="UTF-8"> 
+       <title>Todo App</title>
+       <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>TODO App</h1>
+        </header>
+
+        <section>
+            <div class="container-lists">
+                <div class="content-header">
+                    <h2>My Lists</h2>
+                </div>
+
+                <div class="list-body">
+                    <div class="container">
+                        <ul>
+                            <li>Work</li>
+                            <li>Homework</li>
+                            <li>Groceries</li>
+                            <li>Goals</li>
+                        </ul>
+
+                        <form method="POST">
+                            <label>+</label>
+                            <input type="text" placeholder="Create New" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-lists">
+                <div class="content-header">
+                    <h2>Homework</h2>
+                </div>
+
+                <div class="list-body">
+                    <div class="container">
+                        <ul>
+                            <li>Study Quiz 1</li>
+                            <li>Finish HW</li>
+                            <li>Test</li>
+                        </ul>
+
+                        <form method="POST">
+                            <label>+</label>
+                            <input type="text" placeholder="Create New" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="delete-container">
+            <button class="btn delete">Clear Completed Tasks</button>
+            <button class="btn delete">Delete Selected List</button>
+        </div>
+    </body>
+</html>
